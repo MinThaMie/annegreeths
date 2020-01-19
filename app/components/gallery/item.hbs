@@ -1,6 +1,12 @@
-<div local-class="item">
-    {{#if @title}}
-      {{@title}}
-    {{/if}}
-    <img src={{@url}} alt={{@title}}/>
-</div>
+<LinkTo @route="work.item" @model={{@card.id}} local-class="item">
+    <div local-class="image" style="background-image: url('{{@card.imageURL}}')">
+    </div>
+    <div local-class="overlay">
+      {{#if @card.title}}
+          <h2>{{@card.title}}</h2>
+      {{/if}}
+      {{#if @card.description}}
+          <p>{{@card.description}}</p>
+      {{/if}}
+    </div>
+</LinkTo>

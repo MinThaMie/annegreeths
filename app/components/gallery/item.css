@@ -1,6 +1,48 @@
+.image {
+  height: 0;
+  padding-bottom: calc(100% / (3/2));
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s;
+  filter: blur(0);
+}
+.overlay {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & p {
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+  }
+  & h2 {
+    margin: 1rem;
+    font-size: 2rem;
+  }
+}
+
 .item {
-  & img {
-    max-width: 100%;
-    max-height: 100%;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    & .overlay {
+      opacity: 1;
+    }
+    & .image {
+      filter: blur(10px);
+      transform: scale(1.05);
+    }
   }
 }
