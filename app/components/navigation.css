@@ -1,0 +1,22 @@
+.navigation {
+  background-color: #EF476F;
+  & ul {
+    display: flex;
+    justify-content: center;
+    & li {
+      & a {
+        display: block;
+        font-size: 1.2rem;
+        padding: 0.75rem 2rem;
+        color: #fff;
+        text-decoration: none;
+        &:global(.active) {
+          background-color: #BA1D42;
+        }
+        &:hover {
+          background-color: #BA3756;
+        }
+      }
+    }
+  }
+}
