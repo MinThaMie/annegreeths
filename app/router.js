@@ -13,5 +13,9 @@ Router.map(function() {
       path: '/:card_id'
     });
   });
-  this.route('hobby');
+  this.route('hobby', function() {
+    this.route('item', {
+      path: '/:card_id'
+    });
+  });
 });

@@ -1,5 +1,6 @@
 <Gallery as |gl|>
-    <gl.Item @title="Christmas Blessings" @url="/images/handlettering/christmas_blessings.jpeg"/>
-    <gl.Item @title="Paddenstoel"  @url="/images/handlettering/mushroom.jpeg"/>
-    <gl.Item @title="Thanksgiving"  @url="/images/handlettering/thanksgiving.jpeg"/>
+  {{#each this.model as |card| }}
+      <gl.Item @card={{card}} @detailRoute="hobby.item" />
+  {{/each}}
 </Gallery>
+{{outlet}}

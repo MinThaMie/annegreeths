@@ -1,6 +1,6 @@
 <Gallery as |gl|>
-    {{#each this.model as |card| }}
-        <gl.Item @card={{card}}  />
-    {{/each}}
+  {{#each this.model as |card| }}
+      <gl.Item @card={{card}} @detailRoute="work.item" />
+  {{/each}}
 </Gallery>
 {{outlet}}
