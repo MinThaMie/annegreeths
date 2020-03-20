@@ -4,5 +4,5 @@
   grid-template-rows: 1fr;
   grid-column-gap: 40px;
   grid-row-gap: 40px;
-  margin: 0 40px;
+  margin: 0 calc(100vw / 35*1.5);
 }

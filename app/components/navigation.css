@@ -2,6 +2,7 @@
   & ul {
     display: flex;
     justify-content: center;
+    margin: 0;
     & li {
       & a {
         display: block;
