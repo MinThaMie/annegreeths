@@ -36,6 +36,7 @@
   overflow: hidden;
   text-decoration: none;
   color: inherit;
+  border-radius: 8px;
   &:hover {
     & .overlay {
       opacity: 1;

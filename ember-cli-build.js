@@ -6,6 +6,9 @@ const { browsers } = require('./config/targets');
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     cssModules: {
+      headerModules: [
+        'annegreeths/styles/app'
+      ],
       plugins: [
         require('postcss-normalize', {browsers}),
         require('postcss-preset-env')({
