@@ -37,6 +37,7 @@
   text-decoration: none;
   color: inherit;
   border-radius: 8px;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
   &:hover {
     & .overlay {
       opacity: 1;

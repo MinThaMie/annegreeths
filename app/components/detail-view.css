@@ -7,7 +7,7 @@
   height: 100%;
   display: flex;
   & aside {
-    background-color: white;
+    background-color: #F7D4BC;
     padding: 20px;
     min-width: 350px;
     & a {
