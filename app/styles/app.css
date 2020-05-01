@@ -3,7 +3,10 @@
 @import 'sanitize.css/typography';
 
 body {
-  background-image: radial-gradient(#999999 5%, #F8F7E6 5%); /* first color is color of the dot, second of the background*/
+  background-image: radial-gradient(#9999996b 5%, #F8F7E6 5%); /* first color is color of the dot, second of the background*/
   background-position: 0 0;
   background-size: calc(100vw / 35) calc(100vw / 35); /* Determines the size of the grid, automatically repeats because of default background repeat value*/
+}
+h1,h2,h3,h4,h4,h5,h6 {
+  font-family: 'Poiret One', cursive;
 }

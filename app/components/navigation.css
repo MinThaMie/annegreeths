@@ -1,5 +1,6 @@
 .navigation {
-  background-color: #F7D4BC;
+  font-family: 'Poiret One', cursive;
+  background-color: #FFF;
   & ul {
     display: flex;
     justify-content: center;
