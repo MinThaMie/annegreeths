@@ -1,7 +1,7 @@
 import Route from '@ember/routing/route';
 
 export default class WorkRoute extends Route {
-  model() {
-    return this.modelFor('application')['work'];
+  beforeModel(/* transition */) {
+    this.transitionTo('work.all'); // Implicitly aborts the on-going transition.
   }
 }

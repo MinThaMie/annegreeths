@@ -1,6 +1,4 @@
-<Gallery as |gl|>
-  {{#each this.model as |card| }}
-      <gl.Item @card={{card}} @detailRoute="work.item" />
-  {{/each}}
-</Gallery>
+<div local-class="nav-filter">
+  <LinkTo @route="work.all">Alles</LinkTo><LinkTo @route="work.birthday">Verjaardagen</LinkTo><LinkTo @route="work.special">Speciaal</LinkTo>
+</div>
 {{outlet}}

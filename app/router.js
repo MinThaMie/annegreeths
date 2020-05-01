@@ -12,6 +12,10 @@ Router.map(function() {
     this.route('item', {
       path: '/:card_id'
     });
+    this.route('birthday');
+    this.route('all');
+    this.route('special');
+    this.route('housewarming');
   });
   this.route('hobby', function() {
     this.route('item', {
