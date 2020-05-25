@@ -11,20 +11,27 @@
   grid-row-gap: 2rem;
   grid-template-areas:
     " .     header header    . "
-    "main    main    .    sidebar"
+    "main    main    main    sidebar"
     "footer footer footer footer";
 }
 
 .header {
   grid-area: header;
+  text-align: center;
+  margin-bottom: 0;
 }
 .main {
   grid-area: main;
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 8px 0 0 8px;
+  & p {
+    margin: 16px;
+  }
 }
 .sidebar {
   grid-area: sidebar;
   & img {
-    border-radius: 8px;
+    border-radius: 0 8px 8px 0;
   }
 }
 .footer {
