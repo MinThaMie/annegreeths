@@ -21,5 +21,8 @@ Router.map(function() {
     this.route('item', {
       path: '/:card_id'
     });
+    this.route('all');
+    this.route('brushlettering');
+    this.route('fineliners');
   });
 });

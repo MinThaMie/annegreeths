@@ -7,27 +7,25 @@
   filter: blur(0);
 }
 .overlay {
-  top: 0;
+  bottom: 0;
   left: 0;
   position: absolute;
-  height: 100%;
+  height: 40%;
   width: 100%;
   padding: 20px;
   opacity: 0;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.95);
   transition: all 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   & p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 0;
     text-align: center;
   }
   & h2 {
-    margin: 1rem;
-    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    text-align: center;
   }
 }
 
@@ -41,10 +39,6 @@
   &:hover {
     & .overlay {
       opacity: 1;
-    }
-    & .image {
-      filter: blur(10px);
-      transform: scale(1.05);
     }
   }
 }

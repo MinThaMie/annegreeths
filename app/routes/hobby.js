@@ -1,7 +1,7 @@
 import Route from '@ember/routing/route';
 
 export default class HobbyRoute extends Route {
-  model() {
-    return this.modelFor('application')['hobby'];
+  beforeModel(/* transition */) {
+    this.transitionTo('hobby.all'); // Implicitly aborts the on-going transition.
   }
 }

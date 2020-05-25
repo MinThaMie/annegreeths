@@ -1,0 +1,16 @@
+.nav-filter {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  & a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: black;
+    &:global(.active) {
+      color: #EF476F;
+    }
+    &:hover {
+      color: #BA3756;
+    }
+  }
+}

@@ -1,8 +1,9 @@
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, 450px);
   grid-template-rows: 1fr;
   grid-column-gap: 40px;
   grid-row-gap: 40px;
-  margin: calc(100vw / 35*1.5) calc(100vw / 35*1.5) 0 calc(100vw / 35*1.5);
+  justify-content: center;
+  margin-bottom: 40px;
 }

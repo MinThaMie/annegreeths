@@ -1,10 +1,3 @@
-<div local-class="item-detail">
-    <aside>
-        <LinkTo @route={{@backroute}}>Terug</LinkTo>
-        <h1>{{@item.title}}</h1>
-        <p>{{@item.description}}</p>
-    </aside>
-    <main>
-      <img src={{@item.imageURL}} alt=""/>
-    </main>
-</div>
+<LinkTo @route={{concat @backroute "." @item.type}} local-class="item-detail">
+  <img src={{@item.imageURL}} alt=""/>
+</LinkTo>

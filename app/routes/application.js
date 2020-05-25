@@ -47,25 +47,83 @@ export default class ApplicationRoute extends Route {
           description: "Soms moet je zo maar eventjes een kaartje maken. Met waterverf.",
           imageURL: "/images/cards/plantenbak.jpeg",
           type: "special"
-        }
+        },{
+          id: 7,
+          title: "Disneyland",
+          description: "Ook voor persoonlijke gelegenheden kan ik een kaartje maken. Zoals een leuk tripje!",
+          imageURL: "/images/cards/disneyland.jpeg",
+          type: "special"
+        },{
+          id: 8,
+          title: "Geboortekaartje",
+          description: "Een zoon, dat moet gevierd worden! Met brushpens en een waterverf-look",
+          imageURL: "/images/cards/hoera-zoon.jpeg",
+          type: "special"
+        },{
+          id: 9,
+          title: "Beverschap",
+          description: "Een beetje humor helpt een hoop als je je niet zo goed voelt!",
+          imageURL: "/images/cards/beverschap.jpeg",
+          type: "special"
+        },{
+          id: 10,
+          title: "Beterschap",
+          description: "Ook in het Engels kun je iemand een glimlach bezorgen!",
+          imageURL: "/images/cards/get-whale.jpeg",
+          type: "special"
+        },
+
       ],
       hobby:[
         {
-          id: 3,
+          id: 1,
           title: "Christmas Blessings",
           description: "Karin markers met geblend effect, in faux-calligraphy effect.",
-          imageURL: "/images/handlettering/christmas_blessings.jpeg"
+          imageURL: "/images/handlettering/christmas_blessings.jpeg",
+          type: 'brushlettering'
         },
         {
-          id: 4,
+          id: 2,
           title: "Paddenstoel",
           description: "Simpel handletteren met een tekening met Karin markers.",
-          imageURL: "/images/handlettering/mushroom.jpeg"
+          imageURL: "/images/handlettering/mushroom.jpeg",
+          type: 'fineliners'
         },{
-          id: 5,
+          id: 3,
           title: "Thanksgiving",
           description: "Simpele krans met faux-calligraphy effect.",
-          imageURL: "/images/handlettering/thanksgiving.jpeg"
+          imageURL: "/images/handlettering/thanksgiving.jpeg",
+          type: 'fineliners'
+        },{
+          id: 4,
+          title: "Courage",
+          description: "Zwarte achtergrond met simpele gouden en witte letters.",
+          imageURL: "/images/handlettering/courage.jpeg",
+          type: ''
+        },{
+          id: 5,
+          title: "Keep smiling",
+          description: "Een negatief effect door een mal te maken en met brushpens over te trekken.",
+          imageURL: "/images/handlettering/keep-smiling.jpeg",
+          type: 'brushlettering'
+        },{
+          id: 6,
+          title: "I am enough",
+          description: "Handletteren gecombineerd met Zentangle.",
+          imageURL: "/images/handlettering/zentangle.jpeg",
+          type: 'fineliners'
+        },{
+          id: 7,
+          title: "Live in hope",
+          description: "Brushlettering met een fade.",
+          imageURL: "/images/handlettering/live-in-hope.jpeg",
+          type: 'brushlettering'
+        },{
+          id: 8,
+          title: "Set your path",
+          description: "Zwart met goud is altijd een goede combinatie.",
+          imageURL: "/images/handlettering/set-your-path.jpeg",
+          type: 'fineliners'
         }
       ]};
   }
