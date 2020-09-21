@@ -1,8 +1,24 @@
 <nav local-class="navigation" ...attributes>
-    <ul>
+    <ul local-class="list">
         <li><LinkTo @route="index"><img local-class="logo" src="images/logo.png"/></LinkTo></li>
         <li><LinkTo @route="work">Kaartjes</LinkTo></li>
         <li><LinkTo @route="hobby">Handlettering</LinkTo></li>
         <li><LinkTo @route="about">About me</LinkTo></li>
+    </ul>
+    <ul local-class="mobile-list">
+        <div local-class="home"><LinkTo @route="index"><img local-class="logo" src="images/logo.png"/></LinkTo></div>
+        <button local-class="menu-toggle" {{on 'click' this.toggleMenu}} class={{if this.isOpen "open" ""}} >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <li>
+          <ul local-class="menu-items" class={{if this.isOpen "open" ""}}>
+            <li><LinkTo @route="work">Kaartjes</LinkTo></li>
+            <li><LinkTo @route="hobby">Handlettering</LinkTo></li>
+            <li><LinkTo @route="about">About me</LinkTo></li>
+          </ul>
+        </li>
     </ul>
 </nav>
