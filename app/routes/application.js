@@ -125,6 +125,34 @@ export default class ApplicationRoute extends Route {
           imageURL: "/images/handlettering/set-your-path.jpeg",
           type: 'fineliners'
         }
+      ],
+      giphs: [
+          {
+            id: 1,
+            title: "Dance with me, we're the LEC",
+            description: "Fan art van Sjokz met een leuke rok",
+            imageURL: "/images/giphs/lec.gif",
+            type: 'all'
+          },
+          {
+            id: 2,
+            title: "Paperplane",
+            description: "Simpel GIFje met leuke effect",
+            imageURL: "/images/giphs/paperplane.gif",
+            type: 'all'
+          },{
+            id: 3,
+            title: "Helaas Bellenblaas",
+            description: "Nou, dat dus :)",
+            imageURL: "/images/giphs/helaas_bellenblaas.gif",
+            type: 'all'
+          },{
+            id: 4,
+            title: "Volkswagen LT28",
+            description: "De bus van vrienden even in een GIFje gestopt",
+            imageURL: "/images/giphs/van.gif",
+            type: 'all'
+          }
       ]};
   }
 }

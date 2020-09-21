@@ -1,0 +1,5 @@
+<Gallery as |gl|>
+  {{#each this.model as |card| }}
+      <gl.Item @card={{card}} @detailRoute="giphs.item" />
+  {{/each}}
+</Gallery>
