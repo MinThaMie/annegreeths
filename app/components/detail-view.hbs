@@ -1,3 +1,3 @@
-<LinkTo @route={{concat @backroute "." @item.type}} local-class="item-detail">
+<LinkTo @route={{if @item.type (concat @backroute "." @item.type) @backroute}} local-class="item-detail">
   <img src={{@item.imageURL}} alt=""/>
 </LinkTo>

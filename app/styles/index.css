@@ -1,0 +1,21 @@
+.index-container {
+  & img {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+  }
+  & h1, & h2 {
+    width: 65%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  & h1 {
+    margin-bottom: 20px;
+  }
+  & .text {
+    text-align: center;
+    font-size: 1.2rem;
+    width: 65%;
+    margin: 0 auto;
+  }
+}

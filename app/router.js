@@ -25,4 +25,10 @@ Router.map(function() {
     this.route('brushlettering');
     this.route('fineliners');
   });
+  this.route('giphs', function() {
+    this.route('item', {
+      path: '/:card_id'
+    });
+    this.route('all');
+  });
 });
