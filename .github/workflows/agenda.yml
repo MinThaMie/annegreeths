@@ -2,6 +2,7 @@ name: Create our Weekly Meeting notes issue
 on:
   schedule:
     - cron: '0 14 * * 1'
+  workflow_dispatch:
 jobs:
   issue:
     runs-on: ubuntu-latest
